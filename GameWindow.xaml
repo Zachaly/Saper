@@ -1,0 +1,22 @@
+﻿<Window x:Class="SaperWPF.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaperWPF"
+        mc:Ignorable="d"
+        Title="GameWindow"
+        ResizeMode="NoResize"
+        Width="234.333" Height="90.334" SizeToContent="WidthAndHeight">
+
+    <StackPanel>
+
+        <DockPanel LastChildFill="False">
+            <Label x:Name="FlagCount" Content="Remaning flags:" Width="150" DockPanel.Dock="Left" FontSize="16"/>
+            <Label x:Name="TimerLabel" Content="Time: 0" Width="80" DockPanel.Dock="Right" FontSize="16"/>
+        </DockPanel>
+
+        <Grid x:Name="TilesManager" Background="Black"/>
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="SaperWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaperWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Canvas x:Name="canv">
+        <Button x:Name="SmallGameBtn" Content="Create small game" Width="200" Height="50" Background="Gray"
+                Canvas.Top="55" Canvas.Left="200" Click="SmallGameBtn_Click"/>
+        <Button x:Name="MediuGameBtn" Content="Create medium game" Width="200" Height="50" Background="Gray"
+                Canvas.Top="155" Canvas.Left="200" Click="MediuGameBtn_Click"/>
+        <Button x:Name="LargeGameBtn" Content="Create large game" Width="200" Height="50" Background="Gray"
+                Canvas.Top="255" Canvas.Left="200" Click="LargeGameBtn_Click"/>
+    </Canvas>
+</Window>
